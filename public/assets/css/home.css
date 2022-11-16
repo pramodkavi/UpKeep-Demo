@@ -71,7 +71,7 @@ li a::after{
 }
 
 main{
-  /* display: flex; */
+  display: flex;
   height: calc(100vh - 100px);
   align-items:center;
   justify-content: space-evenly;
@@ -83,13 +83,13 @@ main{
 } 
 
 .content-left h1{
-  font-size: 20px;
+  font-size: 72px;
   color: #313336;
   line-height: 92%;
 }
 
 main h1{
-  font-size: 54px;
+  font-size: 74px;
   color:black;
 }
 

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/additem.css">
 </head>
 <body>
     <div class="container">
@@ -17,8 +17,8 @@
             <div class="top">
 
                 <div class="logo">
-                    <img src="images/logo.png" alt="">
-                    <img src="images/title.png" alt="">
+                    <img src="<?= ROOT ?>/assets/images/logo.png" alt="">
+                    <img src="<?= ROOT ?>/assets/images/title.png" alt="">
                 </div>
 
                 <div class="close" id="close-btn">
@@ -102,7 +102,7 @@
                                 <small class="text-muted">User</small>
                             </div>
                             <div class="profile-photo">
-                                <img src="images/profile-1.jpg" alt="">
+                                <img src="<?= ROOT ?>/assets/css/images/profile-1.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -113,50 +113,50 @@
                 </div>
     
             </div>
-<!-- 
+
             <div class="insight">
-                <form action="#">
+                <form method="post" action="#">
                     <div class="itemDetails">
         
                         <div class="input-box">
                             <span class="details">Item Name</span>
-                            <input type="text" name="" id="" required placeholder="Enter Item Name">
+                            <input type="text" name="item_name" id="" required placeholder="Enter Item Name">
                         </div>
         
                         <div class="input-box">
-                            <span class="details">District</span>
-                            <select name="Select Item Type" id="district" ></select>
+                            <span class="details">Item type</span>
+                            <select name="item_type" id="itemtype" ></select>
                         </div>
                         
                         <div class="middleInput">
                             <div class="input-box">
                                 <span class="details">Brand</span>
-                                <input type="text" name="" id="" required placeholder="Enter Brand">
+                                <input type="text" name="brand" id="" required placeholder="Enter Brand">
                             </div>
             
                             <div class="input-box">
                                 <span class="details">Model</span>
-                                <input type="text" name="" id="" required placeholder="Enter Model">
+                                <input type="text" name="model" id="" required placeholder="Enter Model">
                             </div>
             
                             <div class="input-box">
                                 <span class="details">Purchase Price(Rs.)</span>
-                                <input type="number" name="" id="" required placeholder="Purchase Price">
+                                <input type="number" name="purchase_price" id="" required placeholder="Purchase Price">
                             </div>
                             
                             <div class="input-box">
                                 <span class="details">Description</span>
-                                <input type="text" name="" id="" required placeholder="Enter Description about item">
+                                <input type="text" name="description" id="" required placeholder="Enter Description about item">
                             </div>
 
                             <div class="input-box">
                                 <span class="details">Purchase Date</span>
-                                <input type="date" name="" id="" required placeholder="Enter Purchase Date">
+                                <input type="date" name="purchase_date" id="" required placeholder="Enter Purchase Date">
                             </div>
 
                             <div class="input-box">
                                 <span class="details">Warrenty Date</span>
-                                <input type="date" name="" id="" required placeholder="Enter Warrenty Date">
+                                <input type="date" name="warrenty_date" id="" required placeholder="Enter Warrenty Date">
                             </div>
                         </div>
                         
@@ -167,10 +167,10 @@
         
                     </div>
                 </form>
-            </div> -->
+            </div>
         </main> 
 
     </div>
-    <script src="index.js"></script>
+    <script src="<?= ROOT ?>/assets/js/itemTypes.js"></script>
 </body>
 </html>

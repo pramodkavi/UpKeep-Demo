@@ -261,8 +261,8 @@ main .insight{
     grid-template-columns: repeat(3,1fr);
     gap: 1.6rem;
     overflow-y: scroll;
-    height: 84vh;
-    padding: 0 1.2rem;
+    height: 81vh;
+    padding: 1rem 1.2rem;
 }
 
 main .insight > div{

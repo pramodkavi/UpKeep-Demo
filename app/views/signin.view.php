@@ -24,7 +24,7 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="text" name="password" id="" required placeholder="Enter Password">
+                    <input type="password" name="password" id="" required placeholder="Enter Password">
                 </div>
 
                 <div class="input-box forgetpw">

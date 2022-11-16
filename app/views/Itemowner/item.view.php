@@ -109,143 +109,39 @@
                 </div>
     
             </div>
+            
             <div class="toolbar">
                 <div class="searchBar">
                     <input type="search" name="" id="" placeholder="Search item">
                     <span class="material-icons-sharp">search</span>
                 </div>
-                <a href="<?= ROOT ?>/itemowner/additem"><button class="addItem">Add an Item</button></a>
+                <a href="<?= ROOT ?>/Itemowner/Additem"><button class="addItem">Add an Item</button></a>
                 
                 <button class="availItem">Available Items</button>
             </div>
 
             <div class="insight">
                 
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>A/C</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="<?= ROOT ?>/assets/images/item1.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Refrigerator</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="<?= ROOT ?>/assets/images/item2.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Washer</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="<?= ROOT ?>/assets/images/item3.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>A/C</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="<?= ROOT ?>/assets/images/item1.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Refrigerator</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="images/item2.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Washer</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="images/item3.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>A/C</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="images/item1.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="expenses">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Refrigerator</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="images/item2.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
-
-                <div class="income">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Samsung</h3>
-                            <h2>Washer</h1>
-                        </div>
-                        <div class="progress">
-                            <img src="images/item3.png" alt="">
-                        </div>
-                    </div>
-                    <small class="text-muted">More Details</small>
-                </div>
+            <?php 
+                if(!empty($result)) {
+                    foreach($result as $row)
+                      echo "
+                      <div class=''>
+                      <span class='material-icons-sharp'>analytics</span>
+                      <div class='middle'>
+                          <div class='left'>
+                              <h3>".$row->item_name."</h3>
+                              <h2>".$row->item_type."</h1>
+                          </div>
+                          <div class='progress'>
+                              <img src='http://localhost/UpKeep/public/assets/images/item1.png'>
+                          </div>
+                      </div>
+                      <small class='text-muted'>More Details</small>
+                  </div>
+                      ";
+                }
+            ?>
 
                 <!-- End of Sales  -->
             </div>

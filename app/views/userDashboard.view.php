@@ -40,11 +40,6 @@
                     <h3>Item</h3>
                 </a>
 
-                <a href="#">
-                    <span class="material-icons-sharp">add</span>
-                    <h3>Add Items</h3>
-                </a>
-
                 <a href="#" >
                     <span class="material-icons-sharp">person</span>
                     <h3>Technician</h3>
