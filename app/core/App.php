@@ -15,19 +15,38 @@ class App{
 
     public function loadController(){
         $URL = $this->split_url();
+        $fileName ="";
 
-        $fileName = "../app/controllers/".ucfirst($URL[0]).".php";
+        if(ucfirst($URL[0])=="Itemowner"){
+            $fileName = "../app/controllers/Itemowner/".ucfirst($URL[1]).".php";
+
+            if(file_exists($fileName)){
+                require $fileName;
+                $this->controller =ucfirst($URL[1]); 
+                unset($URL[0]);
+                unset($URL[1]);
     
-        if(file_exists($fileName)){
-            require $fileName;
-            $this->controller =ucfirst($URL[0]); 
-            unset($URL[0]);
-
-        }else {
-            $fileName = "../app/controllers/_404.php";
-            require $fileName;
-            $this->controller = "_404"; 
+            }else {
+                $fileName = "../app/controllers/_404.php";
+                require $fileName;
+                $this->controller = "_404"; 
+            }
         }
+        else{
+            $fileName = "../app/controllers/".ucfirst($URL[0]).".php";
+
+            if(file_exists($fileName)){
+                require $fileName;
+                $this->controller =ucfirst($URL[0]); 
+                unset($URL[0]);
+    
+            }else {
+                $fileName = "../app/controllers/_404.php";
+                require $fileName;
+                $this->controller = "_404"; 
+            }
+        }
+    
 
         $controller = new $this->controller;// create the object of the find controller
 
