@@ -23,7 +23,7 @@ class Additem {
             }
             $this->view('Itemowner/additem');
         }else{
-            redirect("home");
+            redirect("Home/home");
         }
         
     }

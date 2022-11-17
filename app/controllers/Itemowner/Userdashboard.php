@@ -8,7 +8,7 @@ class Userdashboard {
         if($_SESSION['USER'] == 'Owner'){
             $this->view('userDashboard');
         }else{
-            redirect("home");
+            redirect("Home/home");
         }
 
     }

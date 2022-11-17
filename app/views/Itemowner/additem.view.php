@@ -40,11 +40,6 @@
                     <h3>Item</h3>
                 </a>
 
-                <a href="#">
-                    <span class="material-icons-sharp">add</span>
-                    <h3>Add Items</h3>
-                </a>
-
                 <a href="#" >
                     <span class="material-icons-sharp">person</span>
                     <h3>Technician</h3>
@@ -72,9 +67,9 @@
                     <h3>Settings</h3>
                 </a>
 
-                <a href="#">
+                <a href="<?= ROOT ?>/Signout/signout">
                     <span class="material-icons-sharp">logout</span>
-                    <h3>Log out</h3>
+                    <h3>Sign out</h3>
                 </a>
 
             </div>

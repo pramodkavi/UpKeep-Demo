@@ -15,7 +15,7 @@ class Item {
             $this->view('itemowner/item',$data);
 
         }else{
-            redirect("home");
+            redirect("Home/home");
         }
         
     }
