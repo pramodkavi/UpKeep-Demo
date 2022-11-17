@@ -22,6 +22,11 @@
                 <img src="<?= ROOT ?>/assets/images/logo.png" alt="">
                 <h1>Set up your UpKeep account</h1>
             </div>
+            <?php if(!empty($errors)) :?>
+                <div class="alert alert-danger">
+                    <?= implode('<br>',$errors)?>
+                </div>
+            <?php endif;?>
 
             <form method="post" class="form-contain">
                 <div class="fullname">

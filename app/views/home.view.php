@@ -24,8 +24,8 @@
     </div>
 
     <div class="logbtn">
-    <a class="createBtn" href="<?=ROOT?>/signup" >Create</a></li>
-    <a href="<?= ROOT ?>/signin" >Sign in</a></li>
+    <a class="createBtn" href="<?=ROOT?>/Signup/signup" >Create</a></li>
+    <a href="<?= ROOT ?>/Signin/signin" >Sign in</a></li>
     </div>
 </header>
 

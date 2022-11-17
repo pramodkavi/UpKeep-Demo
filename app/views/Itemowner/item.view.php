@@ -125,21 +125,21 @@
             <?php 
                 if(!empty($result)) {
                     foreach($result as $row)
-                      echo "
-                      <div class=''>
-                      <span class='material-icons-sharp'>analytics</span>
-                      <div class='middle'>
-                          <div class='left'>
-                              <h3>".$row->item_name."</h3>
-                              <h2>".$row->item_type."</h1>
-                          </div>
-                          <div class='progress'>
-                              <img src='http://localhost/UpKeep/public/assets/images/item1.png'>
-                          </div>
-                      </div>
-                      <small class='text-muted'>More Details</small>
-                  </div>
-                      ";
+                        echo "
+                        <div class=''>
+                        <span class='material-icons-sharp'>analytics</span>
+                        <div class='middle'>
+                            <div class='left'>
+                                <h3>".$row->item_name."</h3>
+                                <h2>".$row->item_type."</h1>
+                            </div>
+                            <div class='progress'>
+                                <img src='http://localhost/UpKeep/public/assets/images/item1.png'>
+                            </div>
+                        </div>
+                        <small class='text-muted'>More Details</small>
+                    </div>
+                        ";
                 }
             ?>
 

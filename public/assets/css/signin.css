@@ -98,3 +98,8 @@ input small{
 .btn input:hover{
     background: linear-gradient(-135deg,#0DBCDF,#0095D9);
 }    
+
+.wrongpw::placeholder {
+    color: red;
+    opacity: 1; 
+}

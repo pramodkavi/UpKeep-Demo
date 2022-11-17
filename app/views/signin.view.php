@@ -24,7 +24,21 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" name="password" id="" required placeholder="Enter Password">
+
+                    <!-- when password is wrong then placeholder indicate the warning -->
+                    <?php 
+                        if(!empty($errors)){
+                            echo"
+                                <input class='wrongpw' type='password' name='password'  required placeholder='Password is invalied'>
+                            ";
+                        }else{
+                            echo"
+                                <input type='password' name='password'  required placeholder='Enter Password'>
+                            ";
+                        }
+                    
+                    ?>
+                    
                 </div>
 
                 <div class="input-box forgetpw">
